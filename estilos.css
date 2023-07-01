@@ -1,0 +1,514 @@
+/*HEADER*/
+
+header nav{
+    width: 95%;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 20px;
+}
+
+header a{
+    color: #000;
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul li{
+    list-style: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #575656;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+header nav ul li a:hover{
+    border-bottom:1px solid ;
+}
+
+header nav ul li:not(:last-child){
+    margin-right: 25px;
+}
+
+header nav div:nth-child(1){
+    font-size: 26px;
+    font-weight: bold;
+}
+
+header nav div:last-child{
+    border: 1px solid;
+    width: 10%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+header nav div:last-child:hover{
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid transparent;
+}
+
+header nav div:last-child a{
+    color: #a8a8a8;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+header nav div:last-child:hover a{
+    color: #000;
+    font-weight: bold;
+}
+
+
+/*BODY*/
+
+body{
+    margin-bottom: 0;
+    background-color: #eeeeee;
+}
+
+main .hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/banner.jpg);
+    background-size: cover;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .hero p{
+    color: #fff;
+    font-size: 66px;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+main .hero p:nth-child(1){
+    margin-top: 20px;
+}
+
+main .hero p:nth-child(2){
+    font-size: 18px;
+}
+
+main .hero .boton{
+    width: 10%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ececec;
+    border-radius: 5px;
+    transition: all 0.5s;
+    animation-name: miAnimacion;
+    animation-duration: 5s;
+    position: relative;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+
+main .hero .boton a{
+    transition: all 0.5s;
+}
+
+main .hero .boton:hover{
+    cursor: pointer;
+    background-color: #000;
+}
+
+main .hero .boton:hover a{
+    color: #fff;
+    font-weight: bold;
+}
+
+main .hero .boton a{
+    text-decoration: none;
+    color: #343434;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+main .secundaria{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-bottom: 2px solid #d9d9d9;
+    margin-bottom: 40px;
+}
+
+
+main .secundaria p{
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #393838;
+    margin-bottom: 70px;
+}
+
+main .tercera {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+main .tercera  .texto{
+    width: 40%;
+    height: 30vh;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+main .tercera .texto p:nth-child(1){
+    text-transform: uppercase;
+    color: #3c3b3b;
+    font-size: 11px;
+}
+
+main .tercera .texto p:nth-child(2){
+    text-transform: uppercase;
+    color: #232323;
+    font-size: 22px;
+}
+
+main .tercera .texto p:nth-child(3){
+    text-transform: uppercase;
+    color: #a0a0a0;
+    font-size: 14px;
+}
+
+
+main .tercera .enlace{
+    margin-top: 20px;
+    width: 27%;
+    height: 5vh;
+    background-color: #232323;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+main .tercera .enlace:hover{
+    cursor: pointer;
+    background-color: #fff;
+}
+
+main .tercera .enlace:hover a{
+    color: #000;
+    font-weight: bold;
+}
+
+main .tercera .enlace a{
+    color: #b4b4b4;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+main .tercera .imagen{
+    width: 55%;
+    height: 45vh;
+    background-image: url(./img/nosotros.jpg);
+    background-size: cover;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+main .tercera .imagen:hover{
+    opacity: 50%;
+}
+
+main .tercera .imagen-blog:hover{
+    opacity: 50%;
+}
+
+
+main .tercera .imagen-blog{
+    width: 55%;
+    height: 45vh;
+    background-image: url(./img/blog1.jpg);
+    background-size: cover;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+main .cuarta{
+    margin-top: 50px;
+    margin-bottom: 70px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main .cuarta p,h2{
+    margin: 0;
+}
+
+main .cuarta p{
+    text-transform: uppercase;
+    color: #939393;
+    font-size: 11px;
+}
+
+main .cuarta h2{
+    font-size: 38px;
+    font-weight: 300;
+}
+
+main .quinta {
+    width: 70%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 130px;
+}
+
+main .quinta article {
+    width: 30%;
+    position: relative;
+}
+
+main .quinta article:not(:last-child){
+    border-right: 2px solid #dfdfdf;
+}
+
+main .quinta article h2{
+    width: 70%;
+    line-height: 1.3;
+    color: #1d1d1d;
+}
+
+
+main .quinta article p{
+    color: #8e8e8e;
+    font-size: 17px;
+}
+
+main .quinta article:not(:nth-child(2)){
+    animation-name: segundaAnimacion;
+    animation-duration: 4s;
+    position: relative;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+
+main .quinta article:nth-child(2){
+    animation-name: terceraAnimacion;
+    animation-duration: 4s;
+    position: relative;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+  
+
+/*FOOTER*/  
+footer{
+    width: 98%;
+    margin: auto;
+    height: 50px;
+    background-color: #ececec;
+    display: flex;
+}
+
+/*KEYFRAMES*/
+
+@keyframes terceraAnimacion{
+    0%{top: 50px;}
+    10%{top: 40px;}
+    20%{top: 30px;}
+    30%{top: 20px;}
+    40%{top: 10px;}
+    50%{top: 0px;}
+    60%{top: 10px;}
+    70%{top: 20px;}
+    80%{top: 30px;}
+    90%{top: 40px;}
+    100%{top: 50px;}
+
+} 
+
+@keyframes segundaAnimacion{
+    0%{top: 0px;}
+    10%{top: 10px;}
+    20%{top: 20px;}
+    30%{top: 30px;}
+    40%{top: 40px;}
+    50%{top: 50px;}
+    60%{top: 40px;}
+    70%{top: 30px;}
+    80%{top: 20px;}
+    90%{top: 10px;}
+    100%{top: 0px;}
+
+}   
+
+@keyframes miAnimacion{
+    0% {left: 0; top: 0px;}
+    25% {top: 50px;}
+    50% {top: 100px;}
+    75% {top: 50px;;}
+    100% {top: 0px;;}
+}
+
+/*RESPONSIVE*/
+
+@media (max-width: 375px) {
+
+    
+    header nav{
+        height: 30vh;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    header nav, ul{
+        flex-direction: column ;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    header nav div:last-child{
+        width: 25%;
+    }
+
+    main .hero{
+        height: 50vh;
+      }
+    
+      main .hero p:nth-child(1){
+      font-size: 35px;
+      }
+    
+      main .hero p:nth-child(2){
+        text-align: center;
+        }
+    
+        main .hero .boton{
+            width: 30%;
+        }
+
+        main .secundaria p{
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        main .tercera{
+            margin: auto;
+            width: 90%;
+            flex-direction: column;
+        }
+
+        main .tercera .texto{
+            flex-direction: column;
+            width: 100%;
+            height: 50vh;
+            justify-content: center;
+            margin-top: 30px;
+            border: 2px solid  rgb(227, 227, 227);
+            border-radius: 5px;
+            padding: 0 5px;
+        }
+
+        main .tercera .texto p{
+            text-align: center;
+        }
+
+        main .tercera .texto .enlace{
+            margin:20px  auto 0px auto;
+        }
+
+        main .tercera .imagen {
+           display: none;
+        }
+        
+        
+        main .tercera .imagen-blog{
+           order: 1;
+           width: 100%;
+        }
+
+        main .tercera .texto{
+            order: 2;
+        }
+
+        main .cuarta {
+            margin: 40px 0px 40px 0px;
+        }
+
+        main .quinta {
+            margin: 50px 0px 0px 0px;
+            margin: auto;
+            flex-direction: column;
+        }
+
+        main .quinta article{
+            width: 100%;
+            
+        }
+
+        main .quinta article:nth-child(1){
+            animation: none;
+            border-right: none;
+            border-bottom: 2px solid #d7d7d7;
+        }
+
+        main .quinta article:nth-child(2){
+            animation: none;
+            margin: 20px 0px 20px 0px;
+            border-right: none;
+            border-bottom: 2px solid #d7d7d7;
+        }
+
+        main .quinta article:nth-child(3){
+            animation: none;
+            border-right: none;
+
+        }
+
+        main .quinta article h2{
+           width: 100%;
+        }
+
+        main .quinta article h2 , p{
+            text-align: center;
+        }
+
+  }
+
+
+  
